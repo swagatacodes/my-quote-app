@@ -43,7 +43,7 @@ button{
   margin: 5px;
   margin-left: .5rem;
   color: azure;
-  background-color: red;
+  background-color:plum;
   border-radius: 3px;
   /* box-shadow: 4px 4px 4px 4px pink; */
 }
@@ -51,8 +51,8 @@ input {
   padding: 5px;
   margin: 5px;
   /* margin-left: 45px; */
-  color: azure;
-  background-color: rgb(74, 99, 125);
+  color: black;
+  background-color:peachpuff;
   border-radius: 3px;
   /* box-shadow: 4px 4px 4px 4px pink; */
 }

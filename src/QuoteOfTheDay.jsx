@@ -19,7 +19,10 @@ export function QuoteOfTheDay() {
     }, [])
 
     return (
-        <div style={{ borderRadius:"1rem",margin: "5rem auto", padding: "2rem", border: "2px solid black", maxWidth: "60rem", textAlign:"center",boxShadow:".5rem .5rem 1rem 1rem green" }}>
+        <div style={{ borderRadius:"1rem",margin: "5rem auto", padding: "2rem", border: "2px solid black", maxWidth: "60rem", textAlign:"center",boxShadow:".5rem .5rem 1rem 1rem brown" }}>
+            
+            <h1 style={{borderRadius:".5rem"}}>Quote of the Day</h1>
+            <p style={{ paddingRight:"3rem",paddingLeft:"3rem" }}>{quote}</p>
             <form onSubmit={(e)=>{
                 e.preventDefault();
                 getQuote({category:e.target.category.value});
@@ -32,10 +35,8 @@ export function QuoteOfTheDay() {
                     <option value="funny">Funny</option>
 
                 </datalist>
-                <button>Change language</button>
+                <button>Change Category</button> 
             </form>
-            <h1 style={{borderRadius:".5rem"}}>Quote of the Day</h1>
-            <p style={{ paddingRight:"3rem",paddingLeft:"3rem" }}>{quote}</p>
         </div>
     )
 }
